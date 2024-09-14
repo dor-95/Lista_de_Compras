@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Numans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Numans&display=swap');
 
 * {
     box-sizing: border-box;
@@ -61,4 +61,60 @@ p {
     line-height: 24px;
     text-align: left;
     color: var(--preto);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#input-item {
+    display: block;
+    padding: 12px 16px;
+    border-radius: 24px;
+    border: 1px solid var(--preto);
+    width: 307px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+#input-item::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 500px;
+    text-align: center;
+}
+
+#adicionar-botao {
+    text-align: center;
+    padding: 12px 16px;
+    border-radius: 24px;
+    background-color: var(--cor-primaria);
+    color: var(--neutro);
+    font-family: var(--fonte-texto);
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+.lista-item__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lista-item__nome-compra {
+    display: flex;
+}
+
+.lista-item__texto {
+    font-size: 12px;
+    line-height: 20px;
 }
